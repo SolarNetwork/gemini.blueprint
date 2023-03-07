@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.eclipse.gemini.blueprint</groupId>
+        <groupId>net.solarnetwork.external</groupId>
         <artifactId>gemini-blueprint</artifactId>
         <version>3.0.0.SN01</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+    <groupId>net.solarnetwork.external.iandt</groupId>
     <artifactId>gemini-blueprint-integration-tests-parent</artifactId>
     <packaging>pom</packaging>
     <name>Eclipse Gemini Blueprint Integration Tests Parent</name>

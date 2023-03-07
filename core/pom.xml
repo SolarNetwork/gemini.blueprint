@@ -4,12 +4,12 @@
 
     <parent>
         <artifactId>gemini-blueprint</artifactId>
-        <groupId>org.eclipse.gemini.blueprint</groupId>
+        <groupId>net.solarnetwork.external</groupId>
         <version>3.0.0.SN01</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.eclipse.gemini.blueprint</groupId>
+    <groupId>net.solarnetwork.external</groupId>
     <artifactId>gemini-blueprint-core</artifactId>
     <packaging>jar</packaging>
     <url>http://www.eclipse.org/gemini/blueprint/</url>
@@ -27,11 +27,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-io</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-mock</artifactId>
             <scope>test</scope>
         </dependency>

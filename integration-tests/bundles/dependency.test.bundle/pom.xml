@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+        <groupId>net.solarnetwork.external.iandt</groupId>
         <artifactId>gemini-blueprint-integration-test-bundles</artifactId>
         <version>3.0.0.SN01</version>
         <relativePath>../pom.xml</relativePath>
@@ -17,13 +17,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>simple.service</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>simple.service2</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>

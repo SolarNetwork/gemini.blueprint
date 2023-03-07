@@ -4,12 +4,12 @@
 
     <parent>
         <artifactId>gemini-blueprint-integration-test-bundles</artifactId>
-        <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+        <groupId>net.solarnetwork.external.iandt</groupId>
         <version>3.0.0.SN01</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.eclipse.gemini.blueprint.iandt.blueprint</groupId>
+    <groupId>net.solarnetwork.external.iandt.blueprint</groupId>
     <artifactId>bundles</artifactId>
     <packaging>pom</packaging>
     <name>Gemini Blueprint Integration Testing Bundles</name>

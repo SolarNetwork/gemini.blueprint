@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+        <groupId>net.solarnetwork.external.iandt</groupId>
         <artifactId>gemini-blueprint-integration-tests-parent</artifactId>
         <version>3.0.0.SN01</version>
         <relativePath>../pom.xml</relativePath>
@@ -40,19 +40,19 @@
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-core</artifactId>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-extender</artifactId>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-test</artifactId>
             <scope>provided</scope>
         </dependency>
@@ -64,105 +64,105 @@
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>service.listener</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>lifecycle</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>recursive</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>reference.proxy</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>simple.service</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>simple.service2</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>cardinality0to1</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>scoped.bundle.a</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>scoped.bundle.b</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>scoped.bundle.common</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>configuration</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>dependencies</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>tccl.intf</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>proxy.listener</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint.iandt</groupId>
+            <groupId>net.solarnetwork.external.iandt</groupId>
             <artifactId>component.scan.bundle</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>

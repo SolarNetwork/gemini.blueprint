@@ -4,7 +4,7 @@
 
     <parent>
         <artifactId>gemini-blueprint</artifactId>
-        <groupId>org.eclipse.gemini.blueprint</groupId>
+        <groupId>net.solarnetwork.external</groupId>
         <version>3.0.0.SN01</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -40,15 +40,15 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-extender</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <groupId>net.solarnetwork.external</groupId>
             <artifactId>gemini-blueprint-mock</artifactId>
             <scope>test</scope>
         </dependency>
