@@ -4,6 +4,20 @@ This repository is a fork of the Eclipse Gemini Blueprint repository, which has 
 developed. The reason for this fork is to update Gemini Blueprint from Spring 4.2 to 5.3.
 See the original [readme.txt](./readme.txt) file for general information.
 
+## Using
+
+The following artifacts are published to Maven Central:
+
+| Group | Artifact | Notes |
+|:------|:---------|:------|
+| `net.solarnetwork.external` | `gemini-blueprint-core` | Offers OSGi-based application context and importer/exporter functionality. |
+| `net.solarnetwork.external` | `gemini-blueprint-extender` | Listens for and bootstraps OSGi 4.2 Blueprint and Spring-powered OSGi bundles. |
+| `net.solarnetwork.external` | `gemini-blueprint-extensions` | Proprietary extensions not covered by the OSGi Blueprint specification. |
+| `net.solarnetwork.external` | `gemini-blueprint-io` | Low-level stream utilities.  |
+| `net.solarnetwork.external` | `gemini-blueprint-mock` | Mocks for OSGi interfaces. |
+| `net.solarnetwork.external` | `gemini-blueprint-test` | Provides JUnit based integration testing inside OSGi containers. |
+
+
 ## Building
 
 To build the project, run
