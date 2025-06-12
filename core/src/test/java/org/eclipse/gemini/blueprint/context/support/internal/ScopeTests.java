@@ -142,7 +142,8 @@ public class ScopeTests extends TestCase {
 		Properties props = (Properties) a;
 		props.put("foo", "bar");
 
-		bf.destroyScopedBean("a");
+		// NOTE: changed this for Spring 6, from destroyScopedBean(); not sure if correct
+		bf.destroyBean("a");
 
 		System.out.println(ObjectUtils.nullSafeToString(bf.getRegisteredScopeNames()));
 		//assertTrue(props.isEmpty());
