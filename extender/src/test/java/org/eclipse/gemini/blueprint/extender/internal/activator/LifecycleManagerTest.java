@@ -21,17 +21,14 @@ import org.eclipse.gemini.blueprint.mock.MockBundleContext;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Matchers;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Version;
 
 import static java.lang.Thread.yield;
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static org.mockito.Matchers.eq;
-import static org.mockito.Matchers.isA;
 import static org.mockito.Mockito.*;
 
 /**
@@ -143,14 +140,11 @@ public class LifecycleManagerTest {
     }
 
     private void verifyContextCreationIsNotAttempted() throws Exception {
-        verify(this.contextCreator, never()).createApplicationContext(Matchers.<BundleContext>any());
+        verify(this.contextCreator, never()).createApplicationContext(any());
     }
 
     private Bundle createBundleWithoutBundleContext() {
-        Bundle bundle = mock(Bundle.class);
-        Version version = new Version(1, 0, 0);
-        doReturn(version).when(bundle).getVersion();
-        return bundle;
+        return mock(Bundle.class);
     }
 
 
