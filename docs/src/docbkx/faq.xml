@@ -121,9 +121,8 @@
     <section id="supported-osgi-platforms">
 	  <title>What OSGi platforms are supported?</title>
 	  <para>
-	  Gemini Blueprint requires an OSGi 4.2 (though it might work on OSGi 4.0 and 4.1) platform. The framework has been tested
-	  on <ulink url="http://www.eclipse.org/equinox/">Equinox</ulink>, <ulink url="http://felix.apache.org">Felix</ulink> 
-	  and <ulink url="http://www.knopflerfish.org/">Knopflerfish</ulink> 
+	  Gemini Blueprint requires an OSGi R8 platform. The framework has been tested
+	  on <ulink url="http://www.eclipse.org/equinox/">Equinox</ulink> and <ulink url="http://felix.apache.org">Felix</ulink> 
 	  - in fact, the test suite is <ulink url="http://build.springframework.org:8085/bamboo/browse/OSGI">ran</ulink> 
 	  against all of them as part of our continuous integration process.
 	  </para>
@@ -327,9 +326,8 @@
           </para>
           <itemizedlist>
           	<listitem>
-          	  <para>Use a repository of pre-wrapped libraries such as <ulink url="http://www.eclipse.org/orbit/">Orbit</ulink>,
-          	  <ulink url="http://felix.apache.org/site/apache-felix-commons.html">Felix Commons</ulink> or Knopflerfish <ulink 
-          	  url="http://www.knopflerfish.org/repo/index.html">repository</ulink>.
+          	  <para>Use a repository of pre-wrapped libraries such as <ulink url="http://www.eclipse.org/orbit/">Orbit</ulink> or
+          	  <ulink url="http://felix.apache.org/site/apache-felix-commons.html">Felix Commons</ulink>.
           	  Gemini Blueprint uses the SpringSource Enterprise <ulink url="http://www.springsource.com/repository/app/">Bundle Repository</ulink> 
           	  for its dependencies, which you might find useful. Additionally, for artifacts that have not yet made it into SpringSource Repository,
           	  Gemini Blueprint provides a small, temporary (Amazon S3) 
@@ -514,14 +512,6 @@
      	<emphasis>Blueprint Container</emphasis> chapter in the reference documentation.</para>
      </section>
      
-     <section id="kf-2.3-boot-delegation">
-     	<title>I'm using Knopflerfish 2.3.x and I have a lot of visibility exception. How can I fix this?</title>
-     	
-     	<para>Since 2.3.0, Knopflerfish changed the way it does bootpath delegation which causes classes to be loaded from inside and outside OSGi. Set
-     	the system property <literal>org.knopflerfish.framework.strictbootclassloading</literal> to <literal>true</literal> before starting up the Knopflerfish
-     	platform to prevent this from happening. See Knopflerfish 2.3.x release <ulink url="http://www.knopflerfish.org/release_notes_2.3.html">notes</ulink> for more
-     	information.</para>
-     </section>
      <section id="pde-cycles">
      	<title>I'm using Gemini Blueprint and Spring jars inside Eclipse PDE but I get an error about cycle dependency errors. What's wrong?</title>
      	
