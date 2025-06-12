@@ -244,4 +244,21 @@ public class MockServiceReference implements ServiceReference {
 
 		return result;
 	}
+
+	@Override
+	public Dictionary<String, Object> getProperties() {
+		Hashtable<String, Object> props = new Hashtable<>();
+		if (properties != null) {
+			for (Enumeration e = properties.keys(); e.hasMoreElements(); ) {
+				String key = (String)e.nextElement();
+				props.put(key, properties.get(key));
+			}
+		}
+		return props;
+	}
+
+	@Override
+	public Object adapt(Class type) {
+		return null;
+	}
 }
