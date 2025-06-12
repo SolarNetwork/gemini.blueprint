@@ -859,14 +859,6 @@
             </modules>
         </profile>
 
-        <!-- Java 2 security enabled profile -->
-        <profile>
-            <id>security</id>
-            <properties>
-                <security.argLine>-Djava.security.manager -Djava.security.policy=${policy.url}</security.argLine>
-            </properties>
-        </profile>
-
         <!-- clover profile -->
         <profile>
             <id>clover</id>
