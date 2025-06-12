@@ -79,7 +79,7 @@ public class DefaultOsgiApplicationContextCreator implements OsgiApplicationCont
 	 * @param configurationScanner The configurationScanner to set.
 	 */
 	public void setConfigurationScanner(ConfigurationScanner configurationScanner) {
-		Assert.notNull(configurationScanner);
+		Assert.notNull(configurationScanner, "configurationScanner must not be null");
 		this.configurationScanner = configurationScanner;
 	}
 }

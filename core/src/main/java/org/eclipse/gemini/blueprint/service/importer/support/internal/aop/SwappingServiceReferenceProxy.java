@@ -38,7 +38,7 @@ class SwappingServiceReferenceProxy implements ServiceReferenceProxy {
 	private ServiceReference delegate;
 
 	synchronized ServiceReference swapDelegates(ServiceReference newDelegate) {
-		Assert.notNull(newDelegate);
+		Assert.notNull(newDelegate, "newDelegate must not be null");
 		ServiceReference old = this.delegate;
 		this.delegate = newDelegate;
 

@@ -89,8 +89,8 @@ public abstract class OsgiListenerUtils {
 	}
 
 	private static void registerListener(BundleContext context, ServiceListener listener, String filter) {
-		Assert.notNull(context);
-		Assert.notNull(listener);
+		Assert.notNull(context, "context must not be null");
+		Assert.notNull(listener, "listener must not be null");
 
 		try {
 			// add listener
