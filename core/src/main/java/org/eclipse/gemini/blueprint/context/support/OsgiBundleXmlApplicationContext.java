@@ -268,4 +268,8 @@ public class OsgiBundleXmlApplicationContext extends AbstractDelegatedExecutionA
 	public String[] getConfigLocations() {
 		return super.getConfigLocations();
 	}
+
+	public void destroy() throws Exception {
+		// extending classes do something
+	}
 }
