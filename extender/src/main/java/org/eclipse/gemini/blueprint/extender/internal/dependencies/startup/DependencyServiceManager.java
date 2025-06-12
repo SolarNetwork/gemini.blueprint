@@ -275,24 +275,7 @@ public class DependencyServiceManager {
 
 	protected void findServiceDependencies() throws Exception {
 		try {
-			if (System.getSecurityManager() != null) {
-				final AccessControlContext acc = getAcc();
-
-				PrivilegedUtils.executeWithCustomTCCL(context.getClassLoader(),
-						new PrivilegedUtils.UnprivilegedThrowableExecution<Object>() {
-							public Object run() throws Throwable {
-								AccessController.doPrivileged(new PrivilegedExceptionAction<Object>() {
-									public Object run() throws Exception {
-										doFindDependencies();
-										return null;
-									}
-								}, acc);
-								return null;
-							}
-						});
-			} else {
-				doFindDependencies();
-			}
+			doFindDependencies();
 		} catch (Throwable th) {
 			if (th instanceof Exception)
 				throw ((Exception) th);
@@ -410,17 +393,7 @@ public class DependencyServiceManager {
 		// send dependency event before registering the filter
 		sendInitialBootstrappingEvents(getUnsatisfiedDependencies().keySet());
 
-		if (System.getSecurityManager() != null) {
-			AccessControlContext acc = getAcc();
-			AccessController.doPrivileged(new PrivilegedAction<Object>() {
-				public Object run() {
-					OsgiListenerUtils.addServiceListener(bundleContext, listener, filter);
-					return null;
-				}
-			}, acc);
-		} else {
-			OsgiListenerUtils.addServiceListener(bundleContext, listener, filter);
-		}
+		OsgiListenerUtils.addServiceListener(bundleContext, listener, filter);
 	}
 
 	/**
@@ -540,14 +513,6 @@ public class DependencyServiceManager {
 		this.contextStateAccessor.getEventMulticaster().multicastEvent(dependencyEvent);
 	}
 
-	private AccessControlContext getAcc() {
-		AutowireCapableBeanFactory beanFactory = context.getAutowireCapableBeanFactory();
-		if (beanFactory instanceof ConfigurableBeanFactory) {
-			return ((ConfigurableBeanFactory) beanFactory).getAccessControlContext();
-		}
-		return null;
-	}
-	
     public boolean allDependenciesSatisfied() {
         synchronized (monitor) {
             return unsatisfiedDependencies.isEmpty();
