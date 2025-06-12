@@ -351,4 +351,4 @@ public class OsgiServiceLifecycleListenerAdapter implements OsgiServiceLifecycle
 	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
 		this.beanFactory = beanFactory;
 	}
-}
+}
