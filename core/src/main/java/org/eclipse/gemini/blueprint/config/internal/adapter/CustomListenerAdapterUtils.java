@@ -73,15 +73,7 @@ public abstract class CustomListenerAdapterUtils {
 
 		Assert.notEmpty(possibleArgumentTypes, "possibleArgumentTypes must not be empty");
 
-		if (System.getSecurityManager() != null) {
-			return AccessController.doPrivileged(new PrivilegedAction<Map<Class<?>, List<Method>>>() {
-				public Map<Class<?>, List<Method>> run() {
-					return doDetermineCustomMethods(target, methodName, possibleArgumentTypes, onlyPublic);
-				}
-			});
-		} else {
-			return doDetermineCustomMethods(target, methodName, possibleArgumentTypes, onlyPublic);
-		}
+		return doDetermineCustomMethods(target, methodName, possibleArgumentTypes, onlyPublic);
 	}
 
 	private static Map<Class<?>, List<Method>> doDetermineCustomMethods(final Class<?> target, final String methodName,
