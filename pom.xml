@@ -61,7 +61,7 @@
         <policy.url>..${file.separator}policy.all</policy.url>
 
         <!-- common version ranges -->
-        <spring.version.range.nq>[${spring.base.version},6)</spring.version.range.nq>
+        <spring.version.range.nq>[${spring.base.version},7)</spring.version.range.nq>
         <spring.version.range>"${spring.version.range.nq}"</spring.version.range>
         <gemini.blueprint.version.range.nq>[${project.version},${project.version}]</gemini.blueprint.version.range.nq>
         <gemini.blueprint.version.range>"${gemini.blueprint.version.range.nq}"</gemini.blueprint.version.range>
