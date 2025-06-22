@@ -23,21 +23,21 @@ The following artifacts are published to Maven Central:
 To build the project, run
 
 ```sh
-mvn -P equinox install
+mvn install
 ```
 
 ### Java 17
 
-You must build using Java 17. You can provide a `JAVA_HOME` environment variable that points
-to a suitable Java 8 runtime, for example:
+You must build using Java 17+. You can provide a `JAVA_HOME` environment variable that points
+to a suitable Java 17 runtime, for example:
 
 ```
-JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home mvn -P equinox install
+JAVA_HOME=/opt/homebrew/Cellar/openjdk@21/21.0.7/libexec/openjdk.jdk/Contents/Home mvn install
 ```
 
 ## Publishing to Maven Central
 
-To publish to Maven Central, make sure your Maven settings has a `ossrh` server configured, and
+To publish to Maven Central, make sure your Maven settings has a `ossrh-staging-api` server configured, and
 optionally settings for GPG signing. For example, in `~/.m2/settings.xml` you would configure:
 
 ```xml
@@ -46,7 +46,7 @@ optionally settings for GPG signing. For example, in `~/.m2/settings.xml` you wo
 	xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<servers>
 		<server>
-			<id>ossrh</id>
+			<id>ossrh-staging-api</id>
 			<username>SONATYPE_USERNAME</username>
 			<password>SONATYPE_PASSWORD</password>
 		</server>
@@ -72,5 +72,6 @@ mvn --encrypt-password GPG_KEY_PASSWORD
 Then to publish, including the `gpg` profile as shown above, you would run:
 
 ```sh
+mvn -P release,gpg javadoc:jar deploy -Dgpg.keyname=4BC94956
 mvn -P equinox,release,gpg javadoc:jar source:jar deploy
 ```
