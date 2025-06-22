@@ -497,7 +497,7 @@
                     <version>3.11.2</version>
                     <configuration>
                         <quiet>true</quiet>
-                        <additionalparam>-Xdoclint:none</additionalparam>
+                        <additionalJOption>-Xdoclint:none</additionalJOption>
                     </configuration>
                     <executions>
                         <execution>
