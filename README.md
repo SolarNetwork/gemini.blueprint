@@ -1,7 +1,7 @@
 # Eclipse Gemini Blueprint (SolarNetwork Edition)
 
 This repository is a fork of the Eclipse Gemini Blueprint repository, which has ceased being
-developed. The reason for this fork is to update Gemini Blueprint from Spring 4.2 to 5.3.
+developed. The reason for this fork is to update Gemini Blueprint from Spring 4.2 to 6.2.
 See the original [readme.txt](./readme.txt) file for general information.
 
 ## Using
@@ -26,9 +26,9 @@ To build the project, run
 mvn -P equinox install
 ```
 
-### Java 8
+### Java 17
 
-You might have to build using Java 8. You can provide a `JAVA_HOME` environment variable that points
+You must build using Java 17. You can provide a `JAVA_HOME` environment variable that points
 to a suitable Java 8 runtime, for example:
 
 ```
